@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="contact-form">
+        <h1 class="form-header">Contact Us</h1>
+        <div class="wrap-firstname">
+          <label for="firstname" class="lbl-firstname">First Name</label>
+          <input type="text" id="firstname" />
+        </div>
+        <div class="wrap-lastname">
+          <label for="lastname" class="lbl-lastname">Last Name</label>
+          <input type="text" id="lastname" />
+        </div>
+        <div class="form-email">
+          <label for="email" class="lbl-email">Email Address</label>
+          <input type="text" id="email" />
+        </div>
+        <label class="query-type">Query Type</label>
+        <div class="wrap-enquiry">
+          <input type="radio" name="type" id="generalEnquiry" />
+          <label for="generalEnquiry" class="general-enquiry"
+            >General Enquiry</label
+          >
+        </div>
+        <div class="wrap-request">
+          <input type="radio" name="type" id="supportRequest" />
+          <label for="supportRequest" class="support-request"
+            >Support Request</label
+          >
+        </div>
+        <div class="wrap-message">
+          <label for="message" class="lbl-message">Message</label>
+          <textarea name="message" id="message" rows="6"></textarea>
+        </div>
+
+        <div class="wrap-checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox" class="lbl-checkbox"
+            >I consent to being contacted by the team</label
+          >
+        </div>
+
+        <input class="btn btn-submit" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
