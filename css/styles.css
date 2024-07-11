@@ -309,8 +309,6 @@ input[type='radio']:checked {
 
   .wrap-request:hover,
   .wrap-enquiry:hover {
-    border: none;
-    outline: none;
     box-shadow: none;
   }
 
