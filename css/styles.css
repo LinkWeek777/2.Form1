@@ -316,6 +316,10 @@ input[type='radio']:checked {
     text-align: justify;
     letter-spacing: -0.2px;
   }
+
+  input[type='submit']:focus {
+    background-color: var(--primary-color);
+  }
 }
 
 @media screen and (max-width: 400px) {
