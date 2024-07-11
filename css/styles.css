@@ -307,6 +307,13 @@ input[type='radio']:checked {
     white-space: nowrap;
   }
 
+  .wrap-request:hover,
+  .wrap-enquiry:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
   .popup-container .popup-text {
     text-align: justify;
     letter-spacing: -0.2px;
