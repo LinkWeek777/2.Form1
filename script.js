@@ -26,8 +26,9 @@ const errorObject = {
 
 // Добавление класса check
 function addClass(wrap) {
-  radioButton = wrap.firstElementChild;
-  radioButton.addEventListener('click', () => {
+  const radioButton = wrap.firstElementChild;
+  wrap.addEventListener('click', (e) => {
+    radioButton.checked = true;
     wrapArray.forEach((element) => element.classList.remove('check'));
     wrap.classList.add('check');
   });
