@@ -307,16 +307,11 @@ input[type='radio']:checked {
     text-align: justify;
     letter-spacing: -0.2px;
   }
-
-  input[type='radio'] {
-    height: 0.62rem;
-    width: 0.65rem;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .wrap-checkbox > input[type='checkbox'] {
-    width: 1.5rem;
+    width: 1.3rem;
   }
 
   .popup-container {
@@ -331,9 +326,9 @@ input[type='radio']:checked {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .wrap-checkbox > input[type='checkbox'] {
-    width: 1.7rem;
+    width: 1.5rem;
     height: 0.8rem;
   }
 
