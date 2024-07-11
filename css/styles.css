@@ -295,6 +295,10 @@ input[type='radio']:checked {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    padding: 32px 25px;
+  }
+
   .contact-form {
     display: flex;
     flex-direction: column;
