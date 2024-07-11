@@ -10,50 +10,68 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script.js"></script>
     <title>Form</title>
   </head>
   <body>
+    <div class="popup-container">
+      <div class="popup-header">
+        <img src="/assets/images/icon-success-check.svg" alt="popup message" />
+        <h1 class="header-text">Message Sent!</h1>
+      </div>
+      <p class="popup-text">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
     <div class="container">
       <form class="contact-form">
-        <h1 class="form-header">Contact Us</h1>
-        <div class="wrap-firstname">
-          <label for="firstname" class="lbl-firstname">First Name</label>
+        <h1 class="form-header py-1">Contact Us</h1>
+        <div class="wrap-firstname py-1">
+          <label for="firstname" class="lbl-firstname py-0">First Name</label>
           <input type="text" id="firstname" />
+          <p class="required">This field is required</p>
         </div>
-        <div class="wrap-lastname">
-          <label for="lastname" class="lbl-lastname">Last Name</label>
+        <div class="wrap-lastname py-1">
+          <label for="lastname" class="lbl-lastname py-0">Last Name</label>
           <input type="text" id="lastname" />
+          <p class="required">This field is required</p>
         </div>
-        <div class="form-email">
-          <label for="email" class="lbl-email">Email Address</label>
-          <input type="text" id="email" />
+        <div class="form-email py-1">
+          <label for="email" class="lbl-email py-0">Email Address</label>
+          <input type="text" id="email" class="" />
+          <p class="required mb-1">Please enter a valid email address</p>
         </div>
-        <label class="query-type">Query Type</label>
+        <label class="query-type py-1">Query Type</label>
         <div class="wrap-enquiry">
           <input type="radio" name="type" id="generalEnquiry" />
           <label for="generalEnquiry" class="general-enquiry"
             >General Enquiry</label
           >
         </div>
+
         <div class="wrap-request">
           <input type="radio" name="type" id="supportRequest" />
           <label for="supportRequest" class="support-request"
             >Support Request</label
           >
         </div>
-        <div class="wrap-message">
-          <label for="message" class="lbl-message">Message</label>
-          <textarea name="message" id="message" rows="6"></textarea>
+        <p class="required mb-2">Please select a query type</p>
+        <div class="wrap-message py-1">
+          <label for="message" class="lbl-message py-0">Message</label>
+          <textarea name="message" id="message" rows="5"></textarea>
+          <p class="required mb-1">This field is required</p>
         </div>
 
-        <div class="wrap-checkbox">
+        <div class="wrap-checkbox py-1 pb-2">
           <input type="checkbox" name="checkbox" id="checkbox" />
           <label for="checkbox" class="lbl-checkbox"
             >I consent to being contacted by the team</label
           >
         </div>
-
-        <input class="btn btn-submit" type="submit" />
+        <p class="required">
+          To submit this form, please consent to being contacted
+        </p>
+        <input class="btn btn-submit py-1 mt-2" type="submit" />
       </form>
     </div>
   </body>
